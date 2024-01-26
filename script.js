@@ -444,3 +444,37 @@ function pickEight()
 {
     pick(8);
 }
+
+
+
+
+/*
+glossary
+--------
+
+variables (var, let, const)
+variable assignment
+document.querySelector('')
+compound assignment operator (for numerical values, string, or values from innerText for appending)
+increment and decrement ++ --
+logical or and and \\ &&
+.innerText
+.onclick
+includes()
+Math.floor()
+Math.random()
+push()
+pop()
+bracket notation
+dot notation
+arrays
+objects
+ternary operator
+while loop
+for loop
+if-else /if-else-if
+boolean
+functions
+function used in another function
+data structures and algorithm
+*/
