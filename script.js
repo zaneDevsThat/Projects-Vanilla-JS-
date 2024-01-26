@@ -233,9 +233,9 @@ function goCave()
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-function goFight()
+function goFight() //Go fight this(the one you chose to click(fightSlime/fightBeast/fightDragon)) monster. That's why this is called inside those functions.
 {
-    update(locations[3]);
+    update(locations[3]); //refers to name: fight, functions: attack, dodge and goTown
     monsterHealth = monsters[fighting].health;
     monsterStats.style.display = "block";
     monsterName.innerText = monsters[fighting].name;
@@ -282,13 +282,13 @@ function fightDragon()
     goFight();
 }
 
-function defeatMonster()
+function defeatMonster() //Runs when the monster is defeated
 {
     gold += Math.floor(monsters[fighting].level * 6.7);
     xp += monsters[fighting].level;
     goldText.innerText = gold;
     xpText.innerText = xp;
-    update(locations[4]);
+    update(locations[4]); // points to name: kill monster (could've been "killed monster")
 }
 
 function lose()
@@ -297,3 +297,13 @@ function lose()
 }
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+function restart()
+{
+    xp = 0;
+    health = 100;
+    gold = 50;
+    currentWeapon = 0;
+    inventory = ["stick"];
+
+}
