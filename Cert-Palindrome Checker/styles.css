@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  /* border: 1px dashed #FF2F2A4F; */
+  font-family: "arial";
+  font-size: 14px;
+}
+
+.main-container {
+  max-width: 35%;
+  min-width: 400px;
+  margin: 0 auto;
+  border: .15em dashed #342434;
+  padding: 4em;
+}
+
+.input {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5em 20%;
+}
+
+input {
+  width: 100%;
+  border: .05em solid black;
+  border-radius: .1em;
+  font-family: impact;
+  text-align: center;
+  font-size: 3em;
+}
+
+button {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border: .15em solid black;
+  border-radius: .3em;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #BB1515, #DD2211);
+  cursor: pointer;
+}
+
+#result {
+  min-width: 6em;
+  max-width: 15em;
+  height: 2em;
+  border: .1em solid black;
+  margin: 1rem auto;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0 3em 0;
+}
+
+.palindrome {
+  color: green;
+}
+
+.not-palindrome {
+  color: red;
+}
